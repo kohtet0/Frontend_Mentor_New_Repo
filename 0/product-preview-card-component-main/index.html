@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./dist/output.css" />
+
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="">
+    <div
+      class="min-h-screen bg-cream flex mobile:flex-col desktop:flex-row justify-center items-center"
+    >
+      <!-- card left -->
+      <div class="mobile:mx-5 desktop:mx-0 mobile:w-[340px] desktop:w-[600px]">
+        <img
+          class="mobile:block desktop:hidden rounded-t-lg"
+          src="./src/images/image-product-mobile.jpg"
+          alt="mobile-img"
+        />
+        <img
+          class="mobile:hidden desktop:block rounded-l-3xl"
+          src="./src/images/image-product-desktop.jpg"
+          alt="desktop-img"
+        />
+      </div>
+
+      <!-- card right -->
+      <div
+        class="bg-white p-5 desktop:p-20 mobile:rounded-b-xl mobile:w-[340px] desktop:rounded-r-3xl desktop:w-[600px] desktop:h-[897px]"
+      >
+        <h4
+          class="font-sans mb-3 text-fs uppercase tracking-[5px] text-dark-grayish-blue desktop:text-3xl desktop:tracking-[10px] desktop:mb-8"
+        >
+          Perfume
+        </h4>
+        <h1
+          class="font-serif text-3xl text-very-dark-blue mb-5 desktop:text-7xl desktop:mb-10"
+        >
+          Gabrielle Essence Eau De Parfum
+        </h1>
+        <p
+          class="text-dark-grayish-blue text-fs mb-5 desktop:text-[27px] desktop:mb-10"
+        >
+          A floral, solar and voluptuous interpretation composed by Olivier
+          Polge, Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="flex items-center gap-5 mb-3 desktop:mb-10">
+          <div class="text-dark-cyan font-serif text-3xl desktop:text-7xl">
+            $<span>149.99</span>
+          </div>
+          <div class="line-through text-dark-grayish-blue desktop:text-3xl">
+            $<span>169.99</span>
+          </div>
+        </div>
+        <div
+          class="rounded-lg bg-dark-cyan w-full text-center py-5 desktop:py-10"
+        >
+          <button class="text-white font-bold desktop:text-3xl" type="submit">
+            Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Thwin Lin Htet</a>.
+    </div>
+  </body>
+</html>
