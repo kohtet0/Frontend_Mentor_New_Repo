@@ -30,8 +30,10 @@
     <!-- Rating state start -->
 
     <!-- for card -->
-    <div class="min-h-screen flex justify-center items-center">
-      <div class="mx-auto bg-gradient-to-b from-dark-blue card w-96 shadow-xl p-3 ">
+    <div class="min-h-screen flex justify-center items-center ui_one">
+      <div
+        class="mx-auto bg-gradient-to-b from-dark-blue card w-96 shadow-xl p-3"
+      >
         <div class="card-body">
           <div class="mb-5">
             <img
@@ -40,36 +42,90 @@
               class="p-4 rounded-full bg-dark-blue shadow-sm"
             />
           </div>
-  
+
           <h2 class="card-title text-3xl mb-5 text-white">How did we do?</h2>
           <p class="text-fs mb-5">
-            Please let us know how we did with your support request. All feedback
-            is appreciated to help us improve our offering!
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
           </p>
-  
-          <div class="flex gap-3 justify-evenly w-full mb-5 text-fs rates">
-            <div class="rate bg-dark-blue text-light-grey px-5 py-3 rounded-full hover:bg-orange hover:text-white">1</div>
-            <div class="rate bg-dark-blue text-light-grey px-5 py-3 rounded-full hover:bg-orange hover:text-white">2</div>
-            <div class="rate bg-dark-blue text-light-grey px-5 py-3 rounded-full hover:bg-orange hover:text-white">3</div>
-            <div class="rate bg-dark-blue text-light-grey px-5 py-3 rounded-full hover:bg-orange hover:text-white">4</div>
-            <div class="rate bg-dark-blue text-light-grey px-5 py-3 rounded-full hover:bg-orange hover:text-white">5</div>
+
+          <div
+            id="rates"
+            class="flex gap-3 justify-evenly w-full mb-5 text-fs "
+          >
+            <button
+              class="rate bg-dark-blue text-light-grey px-5 py-3 rounded-full hover:bg-orange hover:text-white"
+            >
+              1
+            </button>
+            <button
+              class="rate active:bg-medium-grey bg-dark-blue text-light-grey px-5 py-3 rounded-full hover:bg-orange hover:text-white"
+            >
+              2
+            </button>
+            <button
+              class="rate bg-dark-blue text-light-grey px-5 py-3 rounded-full hover:bg-orange hover:text-white"
+            >
+              3
+            </button>
+            <button
+              class="rate bg-dark-blue text-light-grey px-5 py-3 rounded-full hover:bg-orange hover:text-white"
+            >
+              4
+            </button>
+            <button
+              class="rate bg-dark-blue text-light-grey px-5 py-3 rounded-full hover:bg-orange hover:text-white"
+            >
+              5
+            </button>
           </div>
-  
+
           <div class="card-actions">
-            <button class="btn bg-orange hover:bg-white hover:text-orange text-white tracking-widest w-full rounded-full">Submit</button>
+            <button
+              class="btn bg-orange hover:bg-white hover:text-orange text-white tracking-widest w-full rounded-full"
+            >
+              Submit
+            </button>
           </div>
         </div>
       </div>
     </div>
 
+    <div id="forUiTwo"></div>
+
+    <script src="./src/main.js"></script>
+
     <!-- Rating state end -->
 
     <!-- Thank you state start -->
 
-    You selected
+    <!-- <div class="min-h-screen flex justify-center items-center">
+      <div class="mx-auto bg-gradient-to-br from-dark-blue card w-96 shadow-xl">
+        <div class="card-body flex justify-center items-center p-6">
+          <div class="m-5">
+            <img
+              src="./src/images/illustration-thank-you.svg"
+              alt="star"
+              class=""
+            />
+          </div>
+
+          <div class="mb-5 flex justify-center items-center">
+            <p class="bg-dark-blue text-orange text-fs px-5 py-2 rounded-full">
+              You selected 4 out of 5
+            </p>
+          </div>
+
+          <h2 class="card-title text-3xl mb-5 text-white">Thank you!</h2>
+          <p class="text-fs mb-5 text-center">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+        </div>
+      </div>
+    </div> -->
+
     <!-- Add rating here -->
-    out of 5 Thank you! We appreciate you taking the time to give a rating. If
-    you ever need more support, don’t hesitate to get in touch!
 
     <!-- Thank you state end -->
 
