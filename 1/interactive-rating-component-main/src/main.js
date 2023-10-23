@@ -1,6 +1,6 @@
 // selector
-const rates = document.getElementById("rates");
-const rate = rates.getElementsByClassName("rate");
+const rates = document.querySelector("#rates");
+const rate = document.querySelectorAll(".rate");
 const btn = document.querySelector(".btn");
 const uiOne = document.querySelector(".ui_one");
 const forUiTwo = document.getElementById("forUiTwo");
@@ -58,20 +58,25 @@ rates.addEventListener("click", (event) => {
 //   return currentRate;
 // });
 
-for (let i = 0; i < rate.length; i++) {
-  rate[i].addEventListener("click", () => {
-    let current = document.getElementsByClassName("active:bg-medium-grey");
-    console.log(current);
-    current[0].className = current[0].className.replace(
-      " active:bg-medium-grey",
-      ""
+rate.forEach((el) => {
+  el.addEventListener("click", () => {
+    rate.forEach((e) => {
+      e.classList.remove(
+        "active:bg-medium-grey",
+        "focus:outline-none",
+        "focus:ring"
+      );
+    });
+    el.classList.add(
+      "active:bg-medium-grey",
+      "focus:outline-none",
+      "focus:ring"
     );
-    this.className += " active:bg-medium-grey ";
   });
-}
+});
 
 btn.addEventListener("click", (event) => {
-  const rate = document.getElementsByClassName("active:bg-light-grey");
+  const rate = document.getElementsByClassName("active:bg-medium-grey");
   const rateText = rate[0].innerText;
 
   uiOne.remove();
