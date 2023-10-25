@@ -6,6 +6,13 @@ module.exports = {
       sans: ["Outfit", "sans-serif"],
     },
     extend: {
+      screens: {
+        mobile: "375px",
+        // => @media (min-width: 375px) { ... }
+
+        desktop: "410px",
+        // => @media (min-width: 1440px) { ... }
+      },
       colors: {
         // Primary
         "soft-blue": "hsl(215, 51%, 70%)",
