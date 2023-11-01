@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./dist/output.css" />
+
+    <title>Frontend Mentor | Order summary card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="app"
+      class="bg-no-repeat mobile:bg-[url('../src/images/pattern-background-mobile.svg')] sm:desktop:bg-[url('../src/images/pattern-background-desktop.svg')]"
+    >
+      <div class="min-h-screen flex justify-center items-center">
+        <div
+          class="rounded-3xl bg-very-pale-blue max-w-sm mx-5 sm:max-w-md sm:mx-auto grid grid-rows-3 overflow-hidden text-center shadow-2xl"
+        >
+          <div class="">
+            <img src="./src/images/illustration-hero.svg" alt="img" />
+          </div>
+          <div class="row-span-2 mx-5 my-3 sm:mx-12 sm:my-10">
+            <h1 class="text-2xl sm:text-3xl font-black text-dark-blue mb-5">
+              Order Summary
+            </h1>
+            <p class="text-fs text-desaturated-blue mb-5 px-3">
+              You can now listen to millions of songs, audiobooks, and podcasts
+              on any device anywhere you like!
+            </p>
+            <div
+              class="flex items-center mb-10 bg-very-pale-blue h-24 rounded-xl px-5 text-fs"
+            >
+              <img class="mr-5" src="./src/images/icon-music.svg" alt="" />
+              <div class="flex flex-col w-32 sm:w-52 text-start">
+                <h4 class="font-bold">Annual Plan</h4>
+                <div class="text-desaturated-blue">
+                  $<span>59.99</span>/year
+                </div>
+              </div>
+              <a class="underline text-bright-blue hover:no-underline hover:text-indigo-500" href="#"
+                >Change</a
+              >
+            </div>
+            <button
+              class="h-14 mb-3 bg-bright-blue font-bold text-fs text-pale-blue rounded-xl w-full shadow-[0_8px_60px_-15px_rgba(0,0,0,0.3)] shadow-bright-blue hover:bg-indigo-500"
+              type="submit"
+            >
+              Proceed to Payment
+            </button>
+            <br />
+            <button
+              class="h-14 w-full text-desaturated-blue font-bold text-fs hover:text-dark-blue"
+              type="submit"
+            >
+              Cancel Order
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 
+
+  
+
+  
+  
+
+  
+
+   -->
+
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Thwin Lin Htet</a>.
+  </div> -->
+  </body>
+</html>
