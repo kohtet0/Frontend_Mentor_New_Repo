@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./dist/output.css" />
+
+    <title>Frontend Mentor | Stats preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="bg-very-dark-blue">
+    <div id="app" class="min-h-screen flex justify-center items-center">
+      <div
+        class="container desktop:container flex flex-col desktop:grid desktop:grid-cols-2 desktop:gap-5 max-w-xs desktop:max-w-6xl bg-dark-desaturated-blue rounded-xl overflow-hidden"
+      >
+        <div class="desktop:order-last">
+          <img
+            src="./src/images/image-header-desktop.jpg"
+            alt=""
+            class="hidden desktop:block desktop:w-full"
+          />
+          <img
+            src="./src/images/image-header-mobile.jpg"
+            alt=""
+            class="desktop:hidden"
+          />
+        </div>
+        <div class="px-5 py-10 desktop:p-20 text-center desktop:text-start text-white">
+          <h1 class="text-3xl desktop:text-4xl font-inter font-bold mb-5 desktop:mb-8">
+            Get <span class="text-soft-violet">insights</span> that help your
+            business grow.
+          </h1>
+          <p class="text-fs mb-7 desktop:mb-16 font-Lexend-Deca text-slightly-trans-white">
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </p>
+          <div class="flex flex-col justify-center items-center desktop:flex-row desktop:items-start desktop:justify-start gap-5 desktop:gap-16">
+            <div class="">
+              <span class="font-inter font-bold text-2xl">10k+</span>
+              <p
+                class="text-slightly-trans-white-stat mt-1 text-fs font-Lexend-Deca font-normal uppercase"
+              >
+                companies
+              </p>
+            </div>
+            <div class="">
+              <span class="font-inter font-bold text-2xl">314</span>
+              <p
+                class="text-slightly-trans-white-stat mt-1 text-fs font-Lexend-Deca font-normal uppercase"
+              >
+                templates
+              </p>
+            </div>
+            <div class="">
+              <span class="font-inter font-bold text-2xl">12m+</span>
+              <p
+                class="text-slightly-trans-white-stat mt-1 text-fs font-Lexend-Deca font-normal uppercase"
+              >
+                queries
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Thwin Lin Htet</a>.
+  </div> -->
+  </body>
+</html>
