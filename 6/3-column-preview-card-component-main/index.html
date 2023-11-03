@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./dist/output.css" />
+
+    <title>Frontend Mentor | 3-column preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main id="app">
+      <div
+        class="container mt-10 flex flex-col lg:flex-row justify-center items-center min-h-screen mb-5"
+      >
+
+        <!-- cardOne -->
+        <div class="max-w-xs rounded-t-lg lg:rounded-e-none lg:rounded-s-lg p-14 bg-bright-orange">
+          <img class="mb-9" src="./src/images/icon-sedans.svg" alt="sedans" />
+          <h1
+            class="mb-7 text-4xl font-big-shoulders-display uppercase text-very-light-gray"
+          >
+            Sedans
+          </h1>
+          <p class="text-fs text-tran-white mb-16">
+            Choose a sedan for its affordability and excellent fuel economy.
+            Ideal for cruising in the city or on your next road trip.
+          </p>
+
+          <button
+            class="h-10 w-36 text-fs text-bright-orange bg-very-light-gray rounded-full border border-very-light-gray hover:bg-transparent hover:text-very-light-gray"
+            type="submit"
+          >
+            Learn More
+          </button>
+        </div>
+
+        <!-- cardTwo -->
+        <div class="max-w-xs p-14 bg-dark-cyan">
+          <img class="mb-9" src="./src/images/icon-suvs.svg" alt="sedans" />
+          <h1
+            class="mb-7 text-4xl font-big-shoulders-display uppercase text-very-light-gray"
+          >
+            SUVs
+          </h1>
+          <p class="text-fs text-tran-white mb-16">
+            Take an SUV for its spacious interior, power, and versatility.
+            Perfect for your next family vacation and off-road adventures.
+          </p>
+          <button
+            class="h-10 w-36 text-fs text-dark-cyan bg-very-light-gray rounded-full border border-very-light-gray hover:bg-transparent hover:text-very-light-gray"
+            type="submit"
+          >
+            Learn More
+          </button>
+        </div>
+
+        <!-- cardThree -->
+        <div class="max-w-xs rounded-b-lg lg:rounded-s-none lg:rounded-e-lg p-14 bg-very-dark-cyan">
+          <img class="mb-9" src="./src/images/icon-luxury.svg" alt="sedans" />
+          <h1
+            class="mb-7 text-4xl font-big-shoulders-display uppercase text-very-light-gray"
+          >
+            luxury
+          </h1>
+          <p class="text-fs text-tran-white mb-16">
+            Cruise in the best car brands without the bloated prices. Enjoy the
+            enhanced comfort of a luxury rental and arrive in style.
+          </p>
+          <button
+            class="h-10 w-36 text-fs text-very-dark-cyan bg-very-light-gray rounded-full border border-very-light-gray hover:bg-transparent hover:text-very-light-gray"
+            type="submit"
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Thwin Lin Htet</a>.
+    </div>
+  </body>
+</html>
