@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./dist/output.css" />
+
+    <title>Frontend Mentor | Profile card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  
+  <body class="bg-dark-cyan">
+    <main id="app" class="bg-[url('../src/images/bg-pattern-top.svg')] bg-no-repeat mobile:bg-[left_-43rem_top_-40rem] desktop:bg-[left_-19rem_top_-30rem] ">
+      <div class="bg-[url('../src/images/bg-pattern-bottom.svg')] bg-no-repeat mobile:bg-[right_-47rem_top_21rem] desktop:bg-[right_-15rem_top_27rem] min-h-screen flex justify-center items-center">
+        <div
+          class=" w-full max-w-xs sm:max-w-sm rounded-2xl overflow-hidden bg-white shadow-xl dark:bg-gray-800 dark:border-gray-700"
+        >
+          <div class="">
+            <div>
+              <img
+                class="w-full"
+                src="./src/images/bg-pattern-card.svg"
+                alt=""
+              />
+            </div>
+            <div class="flex flex-col items-center justify-center border-b">
+              <img
+                class="w-28 h-28 rounded-full border-[6px] border-white -translate-y-1/2"
+                src="./src/images/image-victor.jpg"
+                alt="Bonnie image"
+              />
+              <h5
+                class="-mt-8 font-bold text-xl text-very-dark-desa-blue dark:text-white mb-2"
+              >
+                Victor Crest
+                <span class="font-medium ml-2 text-dark-gray">26</span>
+              </h5>
+              <span class="text-fs text-dark-gray-blue dark:text-gray-400 mb-7"
+                >London</span
+              >
+            </div>
+
+            <div class="flex justify-center items-center my-7 gap-16 ">
+              <div class="flex flex-col justify-center items-center gap-1">
+                <div class="font-bold text-very-dark-desa-blue text-xl">80K</div>
+                <div class="text-fs text-dark-gray-blue">Followers</div>
+              </div>
+              <div class="flex flex-col justify-center items-center gap-1">
+                <div class="font-bold text-very-dark-desa-blue text-xl">803K</div>
+                <div class="text-fs text-dark-gray-blue">Likes</div>
+              </div>
+              <div class="flex flex-col justify-center items-center gap-1">
+                <div class="font-bold text-very-dark-desa-blue text-xl">1.4K</div>
+                <div class="text-fs text-dark-gray-blue">Photos</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+
+    <!--  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  </body>
+</html>
