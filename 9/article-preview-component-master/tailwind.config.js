@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html"],
+  content: ["./index.html", "./node_modules/flowbite/**/*.js"],
   theme: {
     fontFamily: {
       sans: ["Manrope", "sans-serif"],
@@ -24,5 +24,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("flowbite/plugin")],
 };
