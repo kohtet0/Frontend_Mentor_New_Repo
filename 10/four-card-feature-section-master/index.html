@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./dist/output.css" />
+
+    <title>Frontend Mentor | Four card feature section</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main id="app">
+      <div class="flex flex-col justify-center items-center min-h-screen">
+        <div class="w-[350px] md:w-[520px] text-center mb-20">
+          <h1
+            class="text-[28px] md:text-4xl font-extralight text-very-dark-blue"
+          >
+            Reliable, efficient delivery
+          </h1>
+          <h1
+            class="text-[28px] md:text-4xl font-bold text-very-dark-blue mb-5"
+          >
+            Powered by Technology
+          </h1>
+          <p class="text-grayish-blue text-fs">
+            Our Artificial Intelligence powered tools use millions of project
+            data points to ensure that your project is successful
+          </p>
+        </div>
+
+        <div
+          class="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 lg:grid-rows-2"
+        >
+          <!-- card -->
+          <div class="lg:row-span-2 lg:self-center">
+            <div
+              class="card rounded-lg w-[350px] bg-very-light-gray border-t-4 border-cyan-build shadow-xl lg:row-span-1"
+            >
+              <div class="card-body">
+                <h2 class="card-title text-2xl text-very-dark-blue mb-2">
+                  Supervisor
+                </h2>
+                <p class="text-fs text-grayish-blue">
+                  Monitors activity to identify project roadblocks
+                </p>
+                <div class="card-actions justify-end mt-5">
+                  <img
+                    class="w-12 h12"
+                    src="./src/images/icon-supervisor.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- cardTwo -->
+          <div class="">
+            <div
+              class="card rounded-lg w-[350px] bg-very-light-gray border-t-4 border-red-build shadow-xl"
+            >
+              <div class="card-body">
+                <h2 class="card-title text-2xl text-very-dark-blue mb-2">
+                  Team Builder
+                </h2>
+                <p class="text-fs text-grayish-blue">
+                  Scans our talent network to create the optimal team for your
+                  project
+                </p>
+                <div class="card-actions justify-end mt-5">
+                  <img
+                    class="w-12 h12"
+                    src="./src/images/icon-team-builder.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- cardThree -->
+          <div class="lg:order-4">
+            <div
+              class="card rounded-lg w-[350px] bg-very-light-gray border-t-4 border-orange-build shadow-xl"
+            >
+              <div class="card-body">
+                <h2 class="card-title text-2xl text-very-dark-blue mb-2">
+                  Karma
+                </h2>
+                <p class="text-fs text-grayish-blue">
+                  Regularly evaluates our talent to ensure quality
+                </p>
+                <div class="card-actions justify-end mt-5">
+                  <img
+                    class="w-12 h12"
+                    src="./src/images/icon-karma.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- cardFour -->
+          <div class="lg:row-span-2 lg:self-center">
+            <div
+              class="card rounded-lg w-[350px] bg-very-light-gray border-t-4 border-blue-build shadow-xl mb-20 md:mb-0"
+            >
+              <div class="card-body">
+                <h2 class="card-title text-2xl text-very-dark-blue mb-2">
+                  Calculator
+                </h2>
+                <p class="text-fs text-grayish-blue">
+                  Uses data from past projects to provide better delivery
+                  estimates
+                </p>
+                <div class="card-actions justify-end mt-5">
+                  <img
+                    class="w-12 h12"
+                    src="./src/images/icon-calculator.svg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- 
+  
+  
+
+  
+  
+
+  
+ 
+
+  
+  
+
+  
+  
+
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Thwin Lin Htet</a>.
+    </p>
+  </footer> -->
+  </body>
+</html>
